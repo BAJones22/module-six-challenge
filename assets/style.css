@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+
+  h1 {
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    background-color: darkblue;
+    background-image: linear-gradient(to right, rgb(39, 39, 213) , rgba(101, 20, 101, 0.355));
+  }
+
+  h1 span {
+    font-size: xx-large;
+    color: white;
+  }
