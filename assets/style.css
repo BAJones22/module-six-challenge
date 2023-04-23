@@ -30,7 +30,7 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
   }
-  
+
   .form-inline .btn {
     width: 300px;
     display: block;
@@ -39,4 +39,14 @@ body {
     color: white;
     background-color: rgba(27, 88, 187, 0.601);
   }
-  
+
+  .previous-search .btn {
+    width: 300px;
+    margin-top: 18px;
+    display: block;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: black;
+    background-color: gray;
+  }
+
