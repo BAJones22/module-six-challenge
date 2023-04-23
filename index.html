@@ -11,25 +11,45 @@
 </head>
 <body>
 <h1><span>Weather Dashboard</span></h1>
-
+<div class="container">
 <!-- Input field for the city search -->
-<h2><span>Search for a City:</span></h2> 
 <div class="city-search">
+<h2><span>Search for a City:</span></h2> 
     <div class="form-inline">
       <input type="text" class="form-control mr-sm-2" placeholder="City, State or ZipCode" aria-label="City, State or Zip Code" aria-describedby="button-addon2">
       <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-   </div>
-  </div>
+ </div> 
 <!-- Previously searched cities -->
 <div class = "previous-search">
-<button class="btn btn-outline-secondary" type="button" id="button-addon2">Atlanta</button>
-<button class="btn btn-outline-secondary" type="button" id="button-addon2">Denver</button>
-<button class="btn btn-outline-secondary" type="button" id="button-addon2">Seattle</button>
-<button class="btn btn-outline-secondary" type="button" id="button-addon2">Orlando</button>
-<button class="btn btn-outline-secondary" type="button" id="button-addon2">New York</button>
- </div>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Atlanta</button>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Denver</button>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Seattle</button>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Orlando</button>
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">New York</button>
+</div>
+ 
+</div>
 <!-- Main result header listed with city name, date, weather icon -->
-<!-- Main results ul listed temp, wind, humidity -->
+<div class="search-result">
+    <div class="result-main">
+      <h3><span>City / Date</span></h3>
+      <ul>Temp:</ul>
+      <ul>Wind:</ul>
+      <ul>Humidity:</ul>
+    </div>
+
+    <div class ="result-five-day">
+        <h3><span>5-Day Forecast:</span></h3>
+        <div class ="day-one">
+        <ul>Date</ul>
+        <ul>Temp:</ul>
+        <ul>Wind:</ul>
+        <ul>Humidity:</ul>
+        </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- 5-day forecast header -->
 <!-- 5-day containers each including date, icon, temp, wind, humidity -->

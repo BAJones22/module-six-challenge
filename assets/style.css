@@ -21,13 +21,18 @@ body {
     margin-left: 10px;
   }
 
-  .form-inline .form-control {
-    display: inline-block;
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-inline, .form-control, .previous-search {
+    display: block;
     width: 300px;
     vertical-align: middle;
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
   }
 
@@ -35,6 +40,7 @@ body {
     width: 300px;
     display: block;
     vertical-align: middle;
+    margin-top: 10px;
     margin-left: 10px;
     color: white;
     background-color: rgba(27, 88, 187, 0.601);
@@ -43,10 +49,31 @@ body {
   .previous-search .btn {
     width: 300px;
     margin-top: 18px;
-    display: block;
+    display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
     color: black;
     background-color: gray;
   }
+  
+  .search-result {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    display: inline-block;
+    border: 2px solid black;
+    height: 170px;
+  }
 
+  h3 span{
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .result-five-day {
+    margin-top: 50px;
+    border: 2px solid black;
+    width: 100%;
+    
+
+  }
