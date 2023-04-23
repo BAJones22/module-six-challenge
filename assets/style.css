@@ -15,3 +15,28 @@ body {
     font-size: xx-large;
     color: white;
   }
+
+  h2 span{
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .form-inline .form-control {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-inline .btn {
+    width: 300px;
+    display: block;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: white;
+    background-color: rgba(27, 88, 187, 0.601);
+  }
+  
