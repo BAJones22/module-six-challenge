@@ -19,7 +19,7 @@ function previousSearch () {
     previousBtn.textContent = citySearch;
     previousSearchBtn.appendChild(previousBtn);
 }
-
+  
 async function checkWeather(city) {
     var response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
@@ -54,5 +54,17 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 })
 
+
 checkWeather();
 previousSearch();
+
+
+// Create a new Date object and format it as mm/dd/yyyy
+var today = new Date();
+var formattedDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
+
+// Add the formatted date to an HTML element
+document.getElementById("currentDate").innerHTML = formattedDate;
+
+
+
