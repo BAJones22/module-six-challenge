@@ -62,16 +62,18 @@ body {
     width: 50%;
     display: inline-block;
     border: 2px solid black;
-    height: 170px;
+    height: 200px;
   }
 
-  h3 span{
+  .city{
     font-weight: bold;
     margin-left: 10px;
+    font-size: 35px;
+    padding-bottom: 25px;
   }
 
   .result-five-day {
-    margin-top: 50px;
+    margin-top: 150px;
     border: 2px solid black;
     width: 100%;
   }
@@ -91,4 +93,17 @@ body {
   ul span {
     font-weight: bold;
     font-size: 18px;
+  }
+
+  p {
+    margin-left: 5px;
+    padding: 2px;
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .temp, .wind, .humidity {
+    display: inline-block;
+    margin-left: 8px;
+    color: rgba(27, 88, 187, 0.601);
   }
