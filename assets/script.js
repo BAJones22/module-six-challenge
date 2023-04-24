@@ -1,15 +1,28 @@
 var apiKey = "47d8ef96a06e656505891bda3243fc0e";
 var apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
+var forecastUrl ="https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=";
 
 var searchBox = document.querySelector(".form-inline input");
 var searchBtn = document.querySelector(".form-inline button");
 var weatherIcon = document.querySelector(".weather-icon");
+var previousSearchBtn = document.querySelector(".previous-search");
+
+searchBtn.addEventListener('click', function(){
+    checkWeather();
+    previousSearch();
+});
+
+function previousSearch () {
+    var citySearch = searchBox.value.trim();
+    var previousBtn = document.createElement("button");
+    previousBtn.classList.add("btn", "btn-outline-secondary");
+    previousBtn.textContent = citySearch;
+    previousSearchBtn.appendChild(previousBtn);
+}
 
 async function checkWeather(city) {
     var response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
-
-    console.log(data);
 
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
@@ -42,3 +55,4 @@ searchBtn.addEventListener("click", ()=>{
 })
 
 checkWeather();
+previousSearch();
