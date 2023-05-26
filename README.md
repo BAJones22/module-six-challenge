@@ -20,7 +20,7 @@ The usage of this weather application is for a user to be able to easily look up
 
 ## Credits
 
-Referenced the following link for countdown timer: src=".https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"
+N/A
 
 ## License
 
