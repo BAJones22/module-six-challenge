@@ -99,7 +99,7 @@ async function checkWeather(city) {
   }
 
   // Save the current search value to local storage
-  localStorage.setItem("previousSearch", cityName);
+  localStorage.setItem("previousSearch", searchBox.value);
 }
 
 // Event listener for the Enter key
